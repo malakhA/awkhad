@@ -24,7 +24,7 @@ INSTALL_WKHTMLTOPDF="True"
 OE_PORT="8069"
 # Choose the Awkhad version which you want to install. For example: 12.0, 11.0, 10.0 or saas-18. When using 'master' the master version will be installed.
 # IMPORTANT! This script contains extra libraries that are specifically needed for Awkhad 12.0
-OE_VERSION="12.0"
+OE_VERSION="master"
 # Set this to True if you want to install the Awkhad enterprise version!
 IS_ENTERPRISE="False"
 # set the superadmin password
@@ -36,7 +36,7 @@ OE_CONFIG="${OE_USER}"
 ## === Ubuntu Trusty x64 & x32 === (for other distributions please replace these two links,
 ## in order to have correct version of wkhtmltopdf installed, for a danger note refer to 
 ## https://github.com/awkhad/awkhad/wiki/Wkhtmltopdf ):
-WKHTMLTOX_X64=http://download.awkhad.com/deb/bionic/wkhtmltox_0.12.1.3-1~bionic_amd64.deb
+WKHTMLTOX_X64=http://download.odoo.com/deb/bionic/wkhtmltox_0.12.1.3-1~bionic_amd64.deb
 
 #--------------------------------------------------
 # Update Server
@@ -68,7 +68,7 @@ echo -e "\n--- Installing Python 3 + pip3 --"
 sudo apt-get install git python3 python3-pip build-essential wget python3-dev python3-venv python3-wheel libxslt-dev libzip-dev libldap2-dev libsasl2-dev python3-setuptools node-less libpng12-0 gdebi -y
 
 echo -e "\n---- Install python packages/requirements ----"
-sudo pip3 install -r https://github.com/awkhad/awkhad/raw/${OE_VERSION}/requirements.txt
+sudo pip3 install -r https://github.com/malakhA/awkhad/raw/${OE_VERSION}/requirements.txt
 
 echo -e "\n---- Installing nodeJS NPM and rtlcss for LTR support ----"
 sudo apt-get install nodejs npm
@@ -106,7 +106,7 @@ sudo chown $OE_USER:$OE_USER /var/log/$OE_USER
 # Install AWKHAD
 #--------------------------------------------------
 echo -e "\n==== Installing AWKHAD Server ===="
-sudo git clone --depth 1 --branch $OE_VERSION https://www.github.com/awkhad/awkhad $OE_HOME_EXT/
+sudo git clone --depth 1 --branch $OE_VERSION https://www.github.com/malakhA/awkhad $OE_HOME_EXT/
 
 if [ $IS_ENTERPRISE = "True" ]; then
     # Awkhad Enterprise install!
@@ -115,7 +115,7 @@ if [ $IS_ENTERPRISE = "True" ]; then
     sudo su $OE_USER -c "mkdir $OE_HOME/enterprise"
     sudo su $OE_USER -c "mkdir $OE_HOME/enterprise/addons"
 
-    GITHUB_RESPONSE=$(sudo git clone --depth 1 --branch $OE_VERSION https://www.github.com/awkhad/enterprise "$OE_HOME/enterprise/addons" 2>&1)
+    GITHUB_RESPONSE=$(sudo git clone --depth 1 --branch $OE_VERSION https://www.github.com/malakhA/enterprise "$OE_HOME/enterprise/addons" 2>&1)
     while [[ $GITHUB_RESPONSE == *"Authentication"* ]]; do
         echo "------------------------WARNING------------------------------"
         echo "Your authentication with Github has failed! Please try again."
@@ -123,7 +123,7 @@ if [ $IS_ENTERPRISE = "True" ]; then
         echo "TIP: Press ctrl+c to stop this script."
         echo "-------------------------------------------------------------"
         echo " "
-        GITHUB_RESPONSE=$(sudo git clone --depth 1 --branch $OE_VERSION https://www.github.com/awkhad/enterprise "$OE_HOME/enterprise/addons" 2>&1)
+        GITHUB_RESPONSE=$(sudo git clone --depth 1 --branch $OE_VERSION https://www.github.com/malakhA/enterprise "$OE_HOME/enterprise/addons" 2>&1)
     done
 
     echo -e "\n---- Added Enterprise code under $OE_HOME/enterprise/addons ----"

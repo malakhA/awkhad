@@ -119,7 +119,7 @@ var Documentation = {
    */
   TRANSLATIONS : {},
   PLURAL_EXPR : function(n) { return n == 1 ? 0 : 1; },
-  LACALE : 'unknown',
+  LOCALE : 'unknown',
 
   // gettext and ngettext don't access this so that the functions
   // can safely bound to a different name (_ = Documentation.gettext)
@@ -141,7 +141,7 @@ var Documentation = {
     for (var key in catalog.messages)
       this.TRANSLATIONS[key] = catalog.messages[key];
     this.PLURAL_EXPR = new Function('n', 'return +(' + catalog.plural_expr + ')');
-    this.LACALE = catalog.locale;
+    this.LOCALE = catalog.locale;
   },
 
   /**

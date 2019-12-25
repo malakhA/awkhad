@@ -226,9 +226,9 @@ goog.define('goog.DEBUG', true);
 
 
 /**
- * @define {string} LACALE defines the locale being used for compilation. It is
+ * @define {string} LOCALE defines the locale being used for compilation. It is
  * used to select locale specific data to be compiled in js binary. BUILD rule
- * can specify this value by "--define goog.LACALE=<locale_name>" as a compiler
+ * can specify this value by "--define goog.LOCALE=<locale_name>" as a compiler
  * option.
  *
  * Take into account that the locale code format is important. You should use
@@ -245,7 +245,7 @@ goog.define('goog.DEBUG', true);
  * be used instead of the new code (he).
  *
  */
-goog.define('goog.LACALE', 'en');  // default to en
+goog.define('goog.LOCALE', 'en');  // default to en
 
 
 /**
@@ -77248,7 +77248,7 @@ ol.source.ImageMapGuide.prototype.getUrl = function(baseUrl, params, extent, siz
   var baseParams = {
     'OPERATION': this.useOverlay_ ? 'GETDYNAMICMAPOVERLAYIMAGE' : 'GETMAPIMAGE',
     'VERSION': '2.0.0',
-    'LACALE': 'en',
+    'LOCALE': 'en',
     'CLIENTAGENT': 'ol.source.ImageMapGuide source',
     'CLIP': '1',
     'SETDISPLAYDPI': this.displayDpi_,

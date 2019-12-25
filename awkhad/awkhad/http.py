@@ -61,7 +61,7 @@ rpc_response = logging.getLogger(__name__ + '.rpc.response')
 STATIC_CACHE = 60 * 60 * 24 * 7
 
 # To remove when corrected in Babel
-babel.core.LACALE_ALIASES['nb'] = 'nb_NO'
+babel.core.LOCALE_ALIASES['nb'] = 'nb_NO'
 
 #----------------------------------------------------------
 # RequestHandler
@@ -1109,8 +1109,8 @@ class ZgUISession(werkzeug.contrib.sessions.Session):
             lang = 'ar'
 
         # lang to lang_REGION (datejs only handles lang_REGION, no bare langs)
-        if lang in babel.core.LACALE_ALIASES:
-            lang = babel.core.LACALE_ALIASES[lang]
+        if lang in babel.core.LOCALE_ALIASES:
+            lang = babel.core.LOCALE_ALIASES[lang]
 
         context['lang'] = lang or 'en_US'
 
@@ -1383,7 +1383,7 @@ class Root(object):
                 if territory:
                     lang = '%s_%s' % (code, territory)
                 else:
-                    lang = babel.core.LACALE_ALIASES[code]
+                    lang = babel.core.LOCALE_ALIASES[code]
             except (ValueError, KeyError):
                 lang = 'en_US'
             httprequest.session.context["lang"] = lang

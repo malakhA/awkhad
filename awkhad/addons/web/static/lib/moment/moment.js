@@ -841,7 +841,7 @@ addParseToken(['MMM', 'MMMM'], function (input, array, config, token) {
     }
 });
 
-// LACALES
+// LOCALES
 
 var MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/;
 var defaultLocaleMonths = 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_');
@@ -1234,7 +1234,7 @@ addWeekParseToken(['w', 'ww', 'W', 'WW'], function (input, week, config, token) 
 
 // HELPERS
 
-// LACALES
+// LOCALES
 
 function localeWeek (mom) {
     return weekOfYear(mom, this._week.dow, this._week.doy).week;
@@ -1350,7 +1350,7 @@ function parseIsoWeekday(input, locale) {
     return isNaN(input) ? null : input;
 }
 
-// LACALES
+// LOCALES
 
 var defaultLocaleWeekdays = 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_');
 function localeWeekdays (m, format) {
@@ -1719,7 +1719,7 @@ addParseToken('Hmmss', function (input, array, config) {
     array[SECOND] = toInt(input.substr(pos2));
 });
 
-// LACALES
+// LOCALES
 
 function localeIsPM (input) {
     // IE8 Quirks Mode & IE7 Standards Mode do not allow accessing strings like arrays

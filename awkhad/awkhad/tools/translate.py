@@ -30,7 +30,7 @@ WEB_TRANSLATION_COMMENT = "zgui-web"
 
 SKIPPED_ELEMENTS = ('script', 'style', 'title')
 
-_LACALE2WIN32 = {
+_LOCALE2WIN32 = {
     'af_ZA': 'Afrikaans_South Africa',
     'sq_AL': 'Albanian_Albania',
     'ar_SA': 'Arabic_Saudi Arabia',
@@ -1173,7 +1173,7 @@ def get_locales(lang=None):
         lang = locale.getdefaultlocale()[0]
 
     if os.name == 'nt':
-        lang = _LACALE2WIN32.get(lang, lang)
+        lang = _LOCALE2WIN32.get(lang, lang)
 
     def process(enc):
         ln = locale._build_localename((lang, enc))
