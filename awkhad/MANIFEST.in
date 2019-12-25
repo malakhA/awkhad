@@ -1,0 +1,49 @@
+include requirements.txt
+include LICENSE
+include README.md
+include awkhad/addons/mail/static/scripts/awkhad-mailgate.py
+recursive-include awkhad *.css
+recursive-include awkhad *.csv
+recursive-include awkhad *.doc
+recursive-include awkhad *.docx
+recursive-include awkhad *.eml
+recursive-include awkhad *.eot
+recursive-include awkhad *.gif
+recursive-include awkhad *.html
+recursive-include awkhad *.ico
+recursive-include awkhad *.jpeg
+recursive-include awkhad *.jpg
+recursive-include awkhad *.js
+recursive-include awkhad *.md
+recursive-include awkhad *.mp3
+recursive-include awkhad *.ogg
+recursive-include awkhad *.ods
+recursive-include awkhad *.odt
+recursive-include awkhad *.otf
+recursive-include awkhad *.pdf
+recursive-include awkhad *.png
+recursive-include awkhad *.po
+recursive-include awkhad *.pot
+recursive-include awkhad *.rml
+recursive-include awkhad *.rng
+recursive-include awkhad *.rst
+recursive-include awkhad *.scss
+recursive-include awkhad *.sql
+recursive-include awkhad *.svg
+recursive-include awkhad *.template
+recursive-include awkhad *.txt
+recursive-include awkhad *.ttf
+recursive-include awkhad *.woff
+recursive-include awkhad *.woff2
+recursive-include awkhad *.wsdl
+recursive-include awkhad *.xls
+recursive-include awkhad *.xsd
+recursive-include awkhad *.xsl
+recursive-include awkhad *.xlsx
+recursive-include awkhad *.xml
+recursive-include awkhad *.yml
+recursive-include awkhad *.zip
+recursive-include awkhad/addons/l10n_mx_edi *.xslt *.key *.cer *.txt
+recursive-include awkhad/addons/l10n_mx_reports *.xslt
+recursive-exclude * *.py[co]
+recursive-exclude * *.hg*

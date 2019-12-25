@@ -1,0 +1,34 @@
+#!/bin/sh
+
+set -e
+
+AWKHAD_CONFIGURATION_FILE=/etc/awkhad/awkhad.conf
+AWKHAD_GROUP="awkhad"
+AWKHAD_DATA_DIR=/var/lib/awkhad
+AWKHAD_LOG_DIR=/var/log/awkhad
+AWKHAD_USER="awkhad"
+
+case "${1}" in
+    configure)
+        if ! getent passwd | grep -q "^awkhad:"; then
+            adduser --system --home $AWKHAD_DATA_DIR --quiet --group $AWKHAD_USER
+        fi
+        # Register "$AWKHAD_USER" as a postgres user with "Create DB" role attribute
+        su - postgres -c "createuser -d -R -S $AWKHAD_USER" 2> /dev/null || true
+        # Configuration file
+        chown $AWKHAD_USER:$AWKHAD_GROUP $AWKHAD_CONFIGURATION_FILE
+        chmod 0640 $AWKHAD_CONFIGURATION_FILE
+        # Log
+        mkdir -p $AWKHAD_LOG_DIR
+        chown $AWKHAD_USER:$AWKHAD_GROUP $AWKHAD_LOG_DIR
+        chmod 0750 $AWKHAD_LOG_DIR
+        # Data dir
+        chown $AWKHAD_USER:$AWKHAD_GROUP $AWKHAD_DATA_DIR
+        ;;
+    *)
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

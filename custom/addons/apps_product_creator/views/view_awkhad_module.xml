@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2017-Today: Awkhad Community Association (ACA)-->
+<!--License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).-->
+<awkhad>
+    <record id="awkhad_module_form_view" model="ir.ui.view">
+        <field name="model">awkhad.module</field>
+        <field name="inherit_id" ref="github_connector_awkhad.view_awkhad_module_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='author_ids']" position="after">
+                <field name="product_template_id"/>
+            </xpath>
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button type="object"
+                        class="oe_stat_button"
+                        icon="fa-arrows-v"
+                        name="action_view_products"
+                        attrs="{'invisible': [('product_qty', '=', 0)]}">
+                    <field name="product_qty" string="Products" widget="statinfo"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</awkhad>

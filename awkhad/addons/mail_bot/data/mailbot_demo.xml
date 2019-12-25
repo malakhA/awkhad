@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<awkhad>
+    <data>
+        <!-- Disable awkhadbot on admin so that devs don't hate him -->
+        <record id="base.user_admin" model="res.users">
+            <field name="awkhadbot_state">disabled</field>
+        </record>
+    </data>
+</awkhad>

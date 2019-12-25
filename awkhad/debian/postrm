@@ -1,0 +1,28 @@
+#!/bin/sh
+
+set -e
+
+AWKHAD_LIB_DIR=/var/lib/awkhad
+AWKHAD_USER="awkhad"
+AWKHAD_GROUP="awkhad"
+
+case "${1}" in
+    remove)
+        deluser --quiet --system $AWKHAD_USER || true
+        delgroup --quiet --system --only-if-empty $AWKHAD_GROUP || true
+        ;;
+
+    purge)
+        if [ -d "$AWKHAD_LIB_DIR" ]; then
+            rm -rf $AWKHAD_LIB_DIR
+        fi
+        ;;
+
+    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+        ;;
+
+esac
+
+#DEBHELPER#
+
+exit 0

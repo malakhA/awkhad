@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<awkhad>
+    <record id="invoice_payment_user" model="res.groups">
+      <field name="name">Payments for Invoices</field>
+    </record>
+</awkhad>

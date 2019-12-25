@@ -1,0 +1,14 @@
+[Unit]
+Description=Awkhad Open Source ERP and CRM
+After=network.target
+
+[Service]
+Type=simple
+User=awkhad
+Group=awkhad
+ExecStart=/usr/bin/awkhad --config /etc/awkhad/awkhad.conf --logfile /var/log/awkhad/awkhad-server.log
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
+

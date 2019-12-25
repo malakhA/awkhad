@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2016-Today: Awkhad Community Association (ACA)
+@author: Sylvain LE GAL (https://twitter.com/legalsylvain)
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+<awkhad>
+
+    <record id="oca_organization" model="github.organization">
+        <field name="name">Awkhad Community Association</field>
+        <field name="github_login">ACA</field>
+        <field name="coverage_url_pattern">https://codecov.io/gh/{organization_name}/{repository_name}/branch/{branch_name}</field>
+        <field name="ci_url_pattern">https://travis-ci.org/{organization_name}/{repository_name}</field>
+
+        <field name="ignored_repository_names"><![CDATA[contribute-md-template
+maintainer-quality-tools
+maintainer-tools
+awkhad-community.org
+awkhad-sphinx-autodoc
+OpenUpgrade
+OCB
+openupgradelib
+pylint-awkhad
+l10n-peru]]></field>
+    </record>
+
+</awkhad>

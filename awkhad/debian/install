@@ -1,0 +1,2 @@
+debian/awkhad.conf /etc/awkhad
+README.md /usr/share/doc/awkhad

@@ -1,0 +1,5 @@
+/var/log/awkhad/*.log {
+    copytruncate
+    missingok
+    notifempty
+}

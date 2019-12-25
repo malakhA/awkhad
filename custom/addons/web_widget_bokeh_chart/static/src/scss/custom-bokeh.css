@@ -1,0 +1,14 @@
+.bk-root {
+  z-index: 0;
+  height: inherit !important;
+}
+.bk-root > .bk {
+  height: inherit !important;
+}
+.bk-root > .bk > .bk {
+  height: inherit !important;
+}
+.bk-root > .bk > .bk > .bk-canvas {
+  height: inherit !important;
+  position: inherit !important;
+}

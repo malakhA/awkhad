@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright (C) 2019-Today: GRAP (<http://www.grap.coop/>)
+@author: Sylvain LE GAL (https://twitter.com/legalsylvain)
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+ -->
+
+<awkhad>
+
+    <!-- Awkhad Rules -->
+    <record id="module_type_rule_awkhad_a" model="ir.module.type.rule">
+        <field name="sequence">1</field>
+        <field name="module_domain">[('author_ids', 'ilike', 'Awkhad S.A')]</field>
+        <field name="module_type_id" ref="module_type_awkhad"/>
+    </record>
+
+    <record id="module_type_rule_awkhad_b" model="ir.module.type.rule">
+        <field name="sequence">2</field>
+        <field name="module_domain">[('author_ids', 'ilike', 'ZgUI SA')]</field>
+        <field name="module_type_id" ref="module_type_awkhad"/>
+    </record>
+
+    <record id="module_type_rule_awkhad_c" model="ir.module.type.rule">
+        <field name="sequence">3</field>
+        <field name="module_domain">[('author_ids', '=', 'Awkhad SA')]</field>
+        <field name="module_type_id" ref="module_type_awkhad"/>
+    </record>
+
+    <record id="module_type_rule_awkhad_d" model="ir.module.type.rule">
+        <field name="sequence">4</field>
+        <field name="module_domain">[('author_ids', '=', 'Awkhad')]</field>
+        <field name="module_type_id" ref="module_type_awkhad"/>
+    </record>
+
+    <!-- ACA Rules -->
+    <record id="module_type_rule_oca_a" model="ir.module.type.rule">
+        <field name="sequence">100</field>
+        <field name="module_domain">[('author_ids', '=', 'Awkhad Community Association (ACA)')]</field>
+        <field name="module_type_id" ref="module_type_oca"/>
+    </record>
+
+</awkhad>

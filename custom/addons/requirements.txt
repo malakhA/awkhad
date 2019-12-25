@@ -1,0 +1,77 @@
+# API
+bravado
+swagger-spec-validator==2.4.3
+
+# POS
+wechatpy[cryptography]
+requests-mock
+python-alipay-sdk
+websocket-client
+
+#Saas
+python-slugify
+
+# Field Service
+shapely==1.6.4.post2
+geojson==2.4.1
+
+# Search Engine
+algoliasearch<2.0.0
+elasticsearch>=7.0.0,<8.0.0
+unidecode
+## tests
+vcrpy-unittest
+
+# Server Tools
+raven
+openpyxl
+xlrd
+xlwt
+pysftp
+pygount
+
+# Barcode Scanner
+python-barcode
+
+# Storage 
+paramiko
+python-slugify>=3.0.2
+vcrpy>=2.1.1
+cerberus
+vcrpy-unittest
+boto3
+
+# Miss Addons
+icalendar
+pretty_bad_protocol
+dropbox
+google-api-python-client
+
+# Reporting 
+zpl2>=1.1
+pycups==1.9.73
+
+# Connector
+cachetools>=2.0.1
+phonenumbers
+py-Asterisk
+Voicent-Python
+SOAPpy
+
+# Events
+oca.decorators
+
+
+# mail_inline_css
+premailer
+
+# web_widget_bokeh_chart
+bokeh==1.1.0
+
+# web_widget_plotly_chart
+plotly==4.1.0
+
+# GitHub
+GitPython
+
+# python-chess<0.24

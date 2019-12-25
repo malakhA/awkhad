@@ -1,0 +1,4 @@
+.zgui .oe_kanban_view .oe_kanban_status {
+ position: relative;
+ top: -13px;
+}

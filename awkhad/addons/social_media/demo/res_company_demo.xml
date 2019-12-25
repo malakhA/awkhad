@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<awkhad>
+    <record id="base.main_company" model="res.company">
+        <field name="social_twitter">https://twitter.com/Awkhad</field>
+        <field name="social_facebook">https://www.facebook.com/Awkhad</field>
+        <field name="social_googleplus">https://plus.google.com/+Awkhadapps</field>
+        <field name="social_linkedin">https://www.linkedin.com/company/awkhad</field>
+        <field name="social_youtube">https://www.youtube.com/user/ZgUIonline</field>
+        <field name="social_github">https://github.com/awkhad</field>
+        <field name="social_instagram">https://www.instagram.com/explore/tags/awkhad/</field>
+    </record>
+</awkhad>

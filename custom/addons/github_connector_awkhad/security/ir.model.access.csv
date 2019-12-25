@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_awkhad_author_reader,awkhad_author reader,model_awkhad_author,,1,0,0,0
+access_awkhad_author_manager,awkhad_author manager,model_awkhad_author,github_connector.group_github_connector_manager,1,1,1,1
+access_awkhad_lib_bin_reader,awkhad_lib_bin reader,model_awkhad_lib_bin,,1,0,0,0
+access_awkhad_lib_bin_manager,awkhad_lib_bin manager,model_awkhad_lib_bin,github_connector.group_github_connector_manager,1,1,1,1
+access_awkhad_lib_python_reader,awkhad_lib_python reader,model_awkhad_lib_python,,1,0,0,0
+access_awkhad_lib_python_manager,awkhad_lib_python manager,model_awkhad_lib_python,github_connector.group_github_connector_manager,1,1,1,1
+access_awkhad_license_reader,awkhad_license reader,model_awkhad_license,,1,0,0,0
+access_awkhad_license_manager,awkhad_license manager,model_awkhad_license,github_connector.group_github_connector_manager,1,1,1,1
+access_awkhad_module_reader,awkhad_module reader,model_awkhad_module,,1,0,0,0
+access_awkhad_module_manager,awkhad_module manager,model_awkhad_module,github_connector.group_github_connector_manager,1,1,1,1
+access_awkhad_module_version_reader,awkhad_module_version reader,model_awkhad_module_version,,1,0,0,0
+access_awkhad_module_version_manager,awkhad_module_version manager,model_awkhad_module_version,github_connector.group_github_connector_manager,1,1,1,1
+access_awkhad_category_reader,awkhad_category reader,model_awkhad_category,,1,0,0,0
+access_awkhad_category_manager,awkhad_category manager,model_awkhad_category,github_connector.group_github_connector_manager,1,1,1,1
