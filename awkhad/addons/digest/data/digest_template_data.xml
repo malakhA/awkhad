@@ -140,14 +140,14 @@
                         % if user.has_group('base.group_system'):
                             <div style="margin-top: 20px;"> 
                                 Want to customize the email?
-                                <a href="/web#view_type=form&amp;model=digest.digest&amp;id=${object.id}" target="_blank" style="color: #875A7B;">Choose the metrics you care about</a>
+                                <a href="/web#view_type=form&amp;model=digest.digest&amp;id=${object.id}" target="_blank" style="color: #99d8ff;">Choose the metrics you care about</a>
                             </div>
                             <br />
                         % endif
                         <p style="font-size: 11px; margin-top: 10px;">
                             <strong>
                                 Sent by
-                                <a href="https://www.awkhad.com" style="text-decoration: none; color: #875A7B;">Awkhad</a> - <a href="/web#view_type=form&amp;model=digest.digest&amp;id=${object.id}" target="_blank" style="color: #888888;">Unsubscribe</a>
+                                <a href="https://www.awkhad.com" style="text-decoration: none; color: #99d8ff;">Awkhad</a> - <a href="/web#view_type=form&amp;model=digest.digest&amp;id=${object.id}" target="_blank" style="color: #888888;">Unsubscribe</a>
                             </strong>
                         </p>
                     </td>

@@ -246,7 +246,7 @@ var Dashboard = AbstractAction.extend(ControlPanelMixin, {
                 })
                 .showValues(true)
                 .showYAxis(false)
-                .color(['#7c7bad'])
+                .color(['#4dbbff'])
                 .margin({'left': 0, 'right': 0, 'top': 10, 'bottom': 42});
 
             chart.xAxis

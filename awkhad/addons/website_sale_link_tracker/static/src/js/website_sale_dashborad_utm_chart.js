@@ -47,7 +47,7 @@ WebsiteSaleBackend.include({
                     .labelType("percent")
                     .showLegend(false)
                     .margin({ "left": 0, "right": 0, "top": 0, "bottom": 0 })
-                    .color(['#875a7b', '#21b799', '#E4A900', '#D5653E', '#5B899E', '#E46F78', '#8F8F8F']);
+                    .color(['#99d8ff', '#21b799', '#E4A900', '#D5653E', '#5B899E', '#E46F78', '#8F8F8F']);
 
                 utmChart.tooltip.valueFormatter(function(value, i) {
                     return self.render_monetary_field(value, self.data.currency);

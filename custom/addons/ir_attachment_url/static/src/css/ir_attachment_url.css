@@ -4,14 +4,14 @@
     position: relative !important;
     width: 100% !important;
     background-color: #ffffff !important;
-    color: #7c7bad !important;
+    color: #4dbbff !important;
 }
 .media_url_controls .fa {
     margin: 0px !important;
     padding: 3px !important;
 }
 .media_url_controls span:hover {
-    background-color: #7c7bad !important;
+    background-color: #4dbbff !important;
     color: white !important;
 }
 .o_form_image_controls .fa{

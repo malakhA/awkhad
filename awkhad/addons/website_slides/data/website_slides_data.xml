@@ -29,7 +29,7 @@
         </div>
         <div style="margin: 16px 8px 16px 8px; text-align: center;">
             <a href="${object.website_url}"
-                style="background-color: #875a7b; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px;">View <strong>${object.name}</strong></a>
+                style="background-color: #99d8ff; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px;">View <strong>${object.name}</strong></a>
         </div>
     </p>
 </div>
@@ -56,7 +56,7 @@
         </div>
         <div style="margin: 16px 8px 16px 8px; text-align: center;">
             <a href="${object.website_url}"
-                style="background-color: #875a7b; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px;">View <strong>${object.name}</strong></a>
+                style="background-color: #99d8ff; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px;">View <strong>${object.name}</strong></a>
         </div>
     </p>
 </div>

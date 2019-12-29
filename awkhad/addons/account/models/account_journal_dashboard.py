@@ -86,7 +86,7 @@ class account_journal(models.Model):
             data[:0] = [build_graph_data(last_month, amount)]
 
         [graph_title, graph_key] = self._graph_title_and_key()
-        color = '#875A7B' if 'e' in version else '#7c7bad'
+        color = '#99d8ff' if 'e' in version else '#4dbbff'
         return [{'values': data, 'title': graph_title, 'key': graph_key, 'area': True, 'color': color}]
 
     @api.multi
