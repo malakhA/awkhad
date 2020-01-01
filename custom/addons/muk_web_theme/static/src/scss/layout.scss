@@ -61,9 +61,32 @@ $mk-brand-gradient: linear-gradient(to right bottom, $mk-brand-gradient-start, $
 //----------------------------------------------------------
 
 .o_content, .modal-content {
-    max-width: 100%;
+	max-width: 100%;
+	background-color: #FFF;
 }
-
+.text-muted {
+    color: 
+    #807e7e !important;
+}
+.o_base_settings .o_setting_container .settings_tab {
+    background:#FFF;
+}
+.o_base_settings .o_setting_container .settings_tab .tab {
+    color:#717171;
+}
+.o_mail_discuss .o_mail_discuss_sidebar {
+    background-color:#FFF;
+	color:#1a85f0;
+}
+.o_mail_discuss .o_mail_discuss_sidebar .o_mail_discuss_item.o_active {
+    background-color:#99d8ff;
+}
+.o_base_settings .o_setting_container .settings_tab .selected {
+    background-color:#99d8ff;
+}
+.o_mail_discuss .o_mail_discuss_sidebar .o_mail_discuss_item:hover {
+    background-color:#4dbbff;
+}
 //----------------------------------------------------------
 // Tooltips
 //----------------------------------------------------------

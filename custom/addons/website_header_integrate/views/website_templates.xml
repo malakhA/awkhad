@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<awkhad>
+    <template id="layout" inherit_id="website.layout">
+        <xpath expr="//div[@id='wrapwrap']" position="after">
+            <t t-foreach="request.website.company_id.website_insertion_ids" t-as="line">
+                <t t-raw="line.code"/>
+            </t>
+        </xpath>
+    </template>
+</awkhad>

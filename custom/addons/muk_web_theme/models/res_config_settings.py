@@ -115,7 +115,7 @@ class ResConfigSettings(models.TransientModel):
         colors_changed.append(self.theme_color_appbar_background != colors['mk-appbar-background'])
         if(any(colors_changed)):
             variables = [
-                {'name': 'o-brand-awkhad', 'value': self.theme_color_brand or "#243742"},
+                {'name': 'o-brand-awkhad', 'value': self.theme_color_brand or "#4dbbff"},
                 {'name': 'o-brand-primary', 'value': self.theme_color_primary or "#5D8DA8"},
                 {'name': 'mk-required-color', 'value': self.theme_color_required or "#d1dfe6"},
                 {'name': 'mk-apps-color', 'value': self.theme_color_menu or "#f8f9fa"},

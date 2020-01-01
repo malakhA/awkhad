@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<awkhad>
+    <data>
+       <record model="ir.ui.view" id="view_company_form_inh_tawk">
+            <field name="name">res.company.form.inherited.tawk</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='social_media']" position="after">
+                    <field name="website_insertion_ids">
+                        <tree string="Website Pages Integrations" editable="bottom">
+                            <field name="company_id" invisible="1"/>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="code"/>
+                        </tree>
+                        <form string="Website Pages Integrations">
+                            <group>
+                                <group>
+                                    <field name="company_id" invisible="1"/>
+                                    <field name="name"/>
+                                    <field name="description"/>
+                                    <field name="code"/>
+                                </group>
+                            </group>
+                        </form>
+                    </field>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</awkhad>
